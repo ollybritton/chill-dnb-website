@@ -1,0 +1,19 @@
+$main: black
+$secondary: #E53A40
+
+=box($height:100vh, $width:100%, $direction:column, $text-align:center)
+  width: $width
+  height: $height
+  display: flex
+  flex-direction: $direction
+  justify-content: center
+  text-align: $text-align
+
+.center
+  +box()
+
+a
+  color: lighten($main, 30%)
+  transition: color 300ms ease-in-out
+  &:hover
+    color: black
